@@ -11,29 +11,7 @@ AI-powered backend to convert product URLs into engaging video ads using FastAPI
 ---
 
 ## 📂 Project Structure
-creatify-backend/
-│
-├── app/
-│   ├── __init__.py
-│   ├── main.py
-│   ├── api/
-│   │   └── routes.py
-│   ├── core/
-│   │   ├── config.py
-│   │   └── utils.py
-│   ├── services/
-│   │   ├── generator.py
-│   │   ├── scraper.py
-│   │   └── video_maker.py
-│   └── models/
-│       └── request.py
-│
-├── videos/
-│
-├── .env.example
-├── requirements.txt
-└── README.md
-
+<img width="473" alt="Screenshot 2025-06-23 at 5 14 04 AM" src="https://github.com/user-attachments/assets/bb84632d-d0ad-453c-b780-87d2530c137a" />
 
 ---
 
@@ -54,3 +32,11 @@ pip install -r requirements.txt
 Rename .env.example to .env and fill in your keys:
 OPENAI_API_KEY=your_openai_key
 SERPER_API_KEY=your_serper_key
+
+
+#▶️ How to Run Locally
+uvicorn app.main:app --reload
+Open your browser: http://localhost:8000/docs for Swagger UI.
+#📄 .env.example
+OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxx
+SERPER_API_KEY=your-serper-api-key
